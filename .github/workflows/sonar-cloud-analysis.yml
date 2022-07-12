@@ -17,7 +17,3 @@ jobs:
         run: npm install sonarqube-scanner -D
       - name : run sonar
         run: npm run sonar
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
