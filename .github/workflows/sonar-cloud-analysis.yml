@@ -13,8 +13,8 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: Install dependencies
         run:  npm install
-      - name: add sonarqube-scanner and run
-        run: npm run sonarqube-scanner
+      - name: install sonarqube-scanner
+        run: npm install sonarqube-scanner -D
       - name : run sonar
         run: npm run sonar
       - name: SonarCloud Scan
