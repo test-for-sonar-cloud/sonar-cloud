@@ -2,7 +2,6 @@ const sonarqubeScanner = require("sonarqube-scanner");
 sonarqubeScanner(
     {
         serverUrl: "https://sonarcloud.io",
-        token: "YOUR-TOKEN-HERE",
         options: {
             "sonar.sources": "./src",
             "sonar.exclusions": "**/__tests__/**",
