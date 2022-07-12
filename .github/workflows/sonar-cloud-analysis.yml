@@ -14,7 +14,11 @@ jobs:
       - name: Install dependencies
         run:  npm install
       - name: npm build
-        run: npm run build
+        run: npm install --global yarn
+      - name: add sonarqube-scanner and run
+        run: |
+          yarn add -D sonarqube-scanner
+          yarn sonar
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

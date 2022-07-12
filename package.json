@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode=production --node-env=production",
-    "prettier": "npx prettier --write 'src/**/*.{tsx,ts,css,html,json}'"
+    "prettier": "npx prettier --write 'src/**/*.{tsx,ts,css,html,json}'",
+    "sonar": "node sonar-project.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-query": "^3.39.1",
+    "react-router-dom": "^6.3.0",
+    "recoil": "^0.7.4"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
@@ -46,6 +49,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.7.1",
+    "sonarqube-scanner": "^2.8.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",
