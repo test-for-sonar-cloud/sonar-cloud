@@ -15,5 +15,7 @@ jobs:
         run:  npm install
       - name: install sonarqube-scanner
         run: npm install sonarqube-scanner -D
+      - name: eslint install
+        run: npm install eslint-plugin-sonarjs -g
       - name : run sonar
         run: npm run sonar
